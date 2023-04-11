@@ -23,7 +23,7 @@ section.green {
   background-color: green;
   color: white;
 }
-ul > li {
+#only-there ul > li {
   background: red;
 }
 button.header-button + span {
@@ -36,4 +36,96 @@ p.susid ~ p {
 .salo,
 #bread {
   background: yellow;
+}
+
+.first-task li:first-child {
+  color: white;
+}
+
+.second-task ul:first-child li:first-child {
+  color: yellow;
+}
+
+.third-task ul:nth-child(2) li:first-child {
+  color: yellow;
+}
+
+.four-task li:last-child {
+  color: yellow;
+}
+
+.five-task ul:last-child li:last-child {
+  color: white;
+}
+
+section > .card-body > .only-child-task div:only-child {
+  color: red;
+}
+
+.seven-task p:first-of-type {
+  color: red;
+}
+
+.eight-task p:last-of-type {
+  color: red;
+}
+
+.nine-task p:only-of-type {
+  color: red;
+}
+
+a[href] {
+  color: white;
+  background-color: grey;
+}
+
+li[value] {
+  color: yellow;
+}
+
+li[value='3'] {
+  color: red;
+}
+
+button[class~='primary'] {
+  background-color: blue;
+}
+
+button[class|='secondary'] {
+  background-color: red;
+}
+
+.lesson-three-task-six li[class^='b'] {
+  color: rgb(69, 229, 69);
+  background-color: white;
+}
+
+.lesson-three-task-seven li[class*='on'] {
+  color: rgb(69, 229, 69);
+  background-color: white;
+}
+
+.lesson-three-task-eight span[class$='s'] {
+  background-color: red;
+}
+
+.lesson-three-task-nine h2::first-letter,
+h3::first-letter {
+  color: red;
+}
+
+.lesson-three-task-ten::first-line {
+  background-color: yellow;
+}
+
+.lesson-three-task-eleven input::placeholder {
+  background-color: red;
+}
+
+.lesson-three-task-twelve li::before {
+  content: '➤';
+}
+
+.lesson-three-task-thirteen li::after {
+  content: '➤';
 }
